@@ -1,6 +1,13 @@
 @import "./utils/veriables";
+
 @import "./base/basestyle";
+
 @import "./components/header";
+
+@import "./components/menu_btn";
+@import "./components/mobile_menu";
+@import "./components/header_tablet";
+
 @import "./components/hero";
 @import "./components/modal";
 @import "./components/content";

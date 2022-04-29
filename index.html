@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -17,36 +16,68 @@
     <!-- Navigation-->
         <header class="header">
             <div class="container container__header">
+                <a class="nav__header" href="./index.html"><span class="icon">Web</span>Studio</a>
+                <div class="mobile-menu" data-menu>
                 <nav class="nav">
-                    <a class="nav__header" href="./index.html"><span class="icon">Web</span>Studio</a>
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link current" href="./index.html">Студия</a>
+                    <ul class="nav__list mobile-nav__list">
+                        <li class="nav__item mobile-nav__item">
+                            <a class="nav__link mobile-nav__link current" href="./index.html">Студия</a>
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="./portfolio.html">Портфолио</a>
+                        <li class="nav__item mobile-nav__item">
+                            <a class="nav__link mobile-nav__link" href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="">Контакты</a>
+                        <li class="nav__item mobile-nav__item">
+                            <a class="nav__link mobile-nav__link" href="">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="contact__list">
-                    <li class="contact__item">
-                        <a class="contact__link" href="mailto:info@devstudio.com">
+            <div class="contact-tablet mobile-contact">
+                <ul class="contact__list mobile-contact__list">
+                    <li class="contact__item mobile-contact__item">
+                        <a class="contact__link mobile-contact__mail" href="mailto:info@devstudio.com">
                             <svg class="contact__icon" width="16" height="12">
                                 <use href="./images/icons.svg#envelope"></use>
                             </svg>info@devstudio.com
                         </a>
                     </li>
-                    <li class="contact__item">
-                        <a class="contact__link" href="tel:+380961111111">
+                    <li class="contact__item mobile-contact__item">
+                        <a class="contact__link mobile-contact__phone" href="tel:+380961111111">
                             <svg class="contact__icon" width="10" height="16">
                                 <use href="./images/icons.svg#smartphone"></use>
                             </svg>+38 096 111 11 11
                         </a>
                     </li>
                 </ul>
+                <ul class="mobile-social__list">
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="https://instagram.com">Instagram
+                        </a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="https://twiter.com">Twiter
+                        </a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="https://facebook.com">Facebook
+                        </a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="https://linkedin.com">LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                </div>
+                <button class="menu-btn is-active" 
+                      type="button" 
+                      aria-label="переключатель мобильного меню"
+                      aria-expanded="false"
+                      data-menu-button>
+                      <svg class="menu-btn__icon" width="40" height="40">
+                          <use class="menu-btn__icon-open" href="./images/icons-form.svg#icon-close"></use>
+                          <use class="menu-btn__icon-close" href="./images/icons-form.svg#icon-open"></use>
+                      </svg>
+                </button>
             </div>
         </header>
     <main>
@@ -147,7 +178,7 @@
             </div>
         </section>
         <!--Чем мы занимаемся-->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
             <h2 class="main-title">Чем мы занимаемся</h2>
             <ul class="image__list">
@@ -177,9 +208,9 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
         <!--Наша команда-->
-        <section class="section team">
+        <!-- <section class="section team">
             <div class="container">
             <h2 class="main-title">Наша команда</h2>
                 <ul class="team__list">
@@ -333,9 +364,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- company -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="main-title">Постоянные клиенты</h2>
                 <ul class="company__list">
@@ -383,10 +414,10 @@
                 </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     <!--Подвал-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div class="footer-contact">
                 <a class="footer-contact__link" href="./index.html"><span class="icon">Web</span>Studio</a>
@@ -448,7 +479,8 @@
                 </div>
             </form>
         </div>
-    </footer>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

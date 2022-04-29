@@ -1,25 +1,35 @@
 .content {
-    padding-top: 94px;
+    padding-top: 60px;
+}
+
+.content {
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    }
 }
 
 .content__list {
     display: flex;
+    flex-direction: column
 }
 
 .content__item {
-    margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
-.content__item:last-child {
-    margin-right: 0;
-}
+
 
 .box-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f5f4fa;
-    width: 270px;
+    max-width: 450px;
     height: 120px;
     margin-bottom: 30px;
 }
