@@ -178,7 +178,7 @@
             </div>
         </section>
         <!--Чем мы занимаемся-->
-        <!-- <section class="section">
+        <section class="section image-works">
             <div class="container">
             <h2 class="main-title">Чем мы занимаемся</h2>
             <ul class="image__list">
@@ -208,14 +208,39 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
         <!--Наша команда-->
-        <!-- <section class="section team">
+        <section class="section team">
             <div class="container">
             <h2 class="main-title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__avatar" src="./images/img-igor.jpg" alt="фото Игорь Демьяненко дизайнер продукта" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)"  
+                            srcset="./images/webp-igor.webp 1x, 
+                            ./images/webp-igor@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/img-igor.jpg 1x, 
+                            ./images/img-igor@2x.jpg 2x"
+                                type="image/jpg">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/webp-igor.webp 1x, 
+                            ./images/webp-igor@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/img-igor.jpg 1x, 
+                            ./images/img-igor@2x.jpg 2x"
+                                type="image/jpg">
+                            <source media="(max-width: 767px)" 
+                            srcset="./images/webp-igor.webp 1x, 
+                            ./images/webp-igor@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(max-width: 767px)" 
+                            srcset="./images/img-igor@2x.jpg 2x" 
+                                type="image/jpg">
+                            <img class="team__avatar" src="./images/img-igor.jpg" alt="фото Игорь Демьяненко дизайнер продукта" width="450" height="460">
+                        </picture>
                         <div class="team-frame">
                         <h3 class="team-frame__name">Игорь Демьяненко</h3>
                         <p class="team-frame__text">Product Designer</p>
@@ -252,7 +277,32 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__avatar" src="./images/img-olga.jpg" alt="фото Ольга Репина frontend разработчик" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)"  
+                            srcset="./images/webp-olga.webp 1x, 
+                            ./images/webp-olga@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/img-olga.jpg 1x, 
+                            ./images/img-olga@2x.jpg 2x"
+                                type="image/jpg">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/webp-olga.webp 1x, 
+                            ./images/webp-olga@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/img-olga.jpg 1x, 
+                            ./images/img-olga@2x.jpg 2x"
+                                type="image/jpg">
+                            <source media="(max-width: 767px)" 
+                            srcset="./images/webp-olga.webp 1x, 
+                            ./images/webp-olga@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(max-width: 767px)" 
+                            srcset="./images/img-olga@2x.jpg 2x" 
+                                type="image/jpg">
+                                <img class="team__avatar" src="./images/img-olga.jpg" alt="фото Ольга Репина frontend разработчик" width="450" height="460">
+                        </picture>
                         <div class="team-frame">
                         <h3 class="team-frame__name">Ольга Репина</h3>
                         <p class="team-frame__text">Frontend Developer</p>
@@ -289,7 +339,32 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__avatar" src="./images/img-nikolaj.jpg" alt="фото Николай Тарасов маркитолог" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/webp-nikolaj.webp 1x, 
+                            ./images/webp-nikolaj@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/img-nikolaj.jpg 1x, 
+                            ./images/img-nikolaj@2x.jpg 2x" 
+                            type="image/jpg">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/webp-nikolaj.webp 1x, 
+                            ./images/webp-nikolaj@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/img-nikolaj.jpg 1x, 
+                            ./images/img-nikolaj@2x.jpg 2x" 
+                            type="image/jpg">
+                            <source media="(max-width: 767px)" 
+                            srcset="./images/webp-nikolaj.webp 1x, 
+                            ./images/webp-nikolaj@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(max-width: 767px)" 
+                            srcset="./images/img-nikolaj@2x.jpg 2x" 
+                            type="image/jpg">
+                            <img class="team__avatar" src="./images/img-nikolaj.jpg" alt="фото Николай Тарасов маркитолог" width="450" height="460">
+                        </picture>
                         <div class="team-frame">
                         <h3 class="team-frame__name">Николай Тарасов</h3>
                         <p class="team-frame__text">Marketing</p>
@@ -326,7 +401,32 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__avatar" src="./images/img-mihail.jpg" alt="фото Михаил Ермаков дизайнер пользовательского интерфейса" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/webp-mihail.webp 1x, 
+                            ./images/webp-mihail@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images/img-mihail.jpg 1x, 
+                            ./images/img-mihail@2x.jpg 2x" 
+                            type="image/jpg">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/webp-mihail.webp 1x, 
+                            ./images/webp-mihail@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(min-width: 768px)" 
+                            srcset="./images/img-mihail.jpg 1x, 
+                            ./images/img-mihail@2x.jpg 2x" 
+                            type="image/jpg">
+                            <source media="(max-width: 767px)" 
+                            srcset="./images/webp-mihail.webp 1x, 
+                            ./images/webp-mihail@2x.webp 2x" 
+                            type="image/webp">
+                            <source media="(max-width: 767px)" 
+                            srcset="./images/img-mihail@2x.jpg 2x" 
+                            type="image/jpg">
+                        </picture>
+                        <img class="team__avatar" src="./images/img-mihail.jpg" alt="фото Михаил Ермаков дизайнер пользовательского интерфейса" width="450" height="460">
                         <div class="team-frame">
                         <h3 class="team-frame__name">Михаил Ермаков</h3>
                         <p class="team-frame__text">UI Designer</p>
@@ -364,9 +464,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- company -->
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="main-title">Постоянные клиенты</h2>
                 <ul class="company__list">
@@ -414,11 +514,12 @@
                 </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!--Подвал-->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer-container">
+            <div class="footer-contact__tablet">
             <div class="footer-contact">
                 <a class="footer-contact__link" href="./index.html"><span class="icon">Web</span>Studio</a>
                 <address class="footer-contact__address">г. Киев, пр-т Леси Украинки, 26</address>
@@ -464,6 +565,7 @@
                     </li>
                 </ul>
             </div>
+            </div>
             <form class="form-footer">
                 <b class="form-footer__title">
                     Подпишитесь на рассылку
@@ -479,7 +581,7 @@
                 </div>
             </form>
         </div>
-    </footer> -->
+    </footer>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
